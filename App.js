@@ -1,5 +1,5 @@
 import React, { useState } from 'react';  
-import { View, Button, ScrollView, Image, StyleSheet } from 'react-native'; 
+import { View, Button, ScrollView, Image, StyleSheet, TouchableOpacity } from 'react-native'; 
 import axios from 'axios'; 
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Button title="Carregar Fotos de Gatos" onPress={fetchImages} />
+      <Button title="Carregar Fotos de Gatos" onPress={fetchImages} color='orange' />
       <ScrollView contentContainerStyle={styles.scrollView}>
         {images.map((img, index) => (
           <Image key={index} source={{ uri: img.url }} style={styles.image} />
