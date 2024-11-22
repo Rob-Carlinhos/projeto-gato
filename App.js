@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { View, Button, ScrollView, Image, StyleSheet } from 'react-native';
-import axios from 'axios';
+import React, { useState } from 'react';  
+import { View, Button, ScrollView, Image, StyleSheet } from 'react-native'; 
+import axios from 'axios'; 
 
 export default function App() {
   const [images, setImages] = useState([]);
